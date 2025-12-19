@@ -173,11 +173,12 @@ languages:
           - company: "LK ROBOTICS"
             jobs:
               - name: "Embedded AI Engineer"
-                date: "2025.10 - 2025.12"
+                date: "2025.10 - "
                 content: |
                   - Developed **PyroVision**, an early fire detection system using **NXP i.MX8M Plus** NPU.
                   - Implemented **RGB-IR Sensor Fusion** algorithm to minimize false positives from smoke/fog.
                   - Optimized **YOLOv8** & **TensorFlow Lite** models for edge inference on embedded devices.
+                  - Conducted advanced research on **Transformer-based Re-ID (TransReID)** and **MOT (ByteTrack/OC-SORT)** algorithms using **YOLOv11**.
                   - Built real-time monitoring infrastructure using **TCP/IP**, **GStreamer**, and **PyQt6**.
 
       education:
@@ -360,11 +361,12 @@ languages:
           - company: "LK ROBOTICS"
             jobs:
               - name: "임베디드 AI 엔지니어"
-                date: "2025.10 - 2025.12"
+                date: "2025.10 - "
                 content: |
                   - **NXP i.MX8M Plus** NPU 기반 초기 화재 감지 시스템 **PyroVision** 개발.
                   - 오탐지 최소화를 위한 **RGB-IR 센서 퓨전** 알고리즘 구현.
                   - 엣지 디바이스 추론을 위한 **YOLOv8** 및 **TensorFlow Lite** 모델 최적화.
+                  - **YOLOv11**과 **Transformer(TransReID)**를 활용한 **고성능 다중 객체 추적(MOT) 및 재식별(Re-ID)** 시스템 선행 연구 수행.
                   - **TCP/IP**, **GStreamer**, **PyQt6**를 활용한 실시간 모니터링 인프라 구축.
 
       education:
