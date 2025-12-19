@@ -168,6 +168,19 @@ languages:
               - icon: fab fa-github
                 url: https://github.com/jinhyuk2me/DUST
 
+          - title: "Minecraft with ROS2 & SLAM"
+            content: "A robotics experiment integrating Minecraft with ROS 2. Controls the game character using a physical joystick via micro-ROS and performs real-time SLAM mapping using Cartographer."
+            image: /images/projects/minecraft_banner.png
+            badges:
+              - "ROS 2"
+              - "micro-ROS"
+              - "SLAM"
+              - "ESP32"
+              - "Minecraft"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/jinhyuk2me/Minecraft_with_ROS2
+
       experience:
         enable: true
         title: "Work Experience"
@@ -357,6 +370,19 @@ languages:
             links:
               - icon: fab fa-github
                 url: https://github.com/jinhyuk2me/DUST
+
+          - title: "Minecraft with ROS2 & SLAM"
+            content: "마인크래프트와 ROS 2를 연동한 로보틱스 실험 프로젝트입니다. micro-ROS를 통해 물리 조이스틱으로 게임 캐릭터를 제어하고, 게임 내에서 Cartographer를 활용해 실시간 SLAM 지도 작성을 구현했습니다."
+            image: /images/projects/minecraft_banner.png
+            badges:
+              - "ROS 2"
+              - "micro-ROS"
+              - "SLAM"
+              - "ESP32"
+              - "Minecraft"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/jinhyuk2me/Minecraft_with_ROS2
 
       experience:
         enable: true
