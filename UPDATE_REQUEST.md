@@ -11,13 +11,13 @@
 - **Intro**: Robotics & AI Engineer
 - **Title**: 장진혁
 - **Subtitle**: Jinhyuk Jang
-- **Content**: Combining robot control and AI perception to build autonomous systems that work in the real world.
+- **Content**: 로보틱스는 다양한 공학의 오케스트레이션입니다. 시스템 설계부터 AI, 제어까지 다양한 분야의 경험을 통해 직접 실생활에 적용할 수 있는 로봇 시스템을 만듭니다.
 
 ### 영문 버전
 - **Intro**: Hello, I am
 - **Title**: Jinhyuk Jang.
 - **Subtitle**: Robotics & AI Engineer
-- **Content**: I build complete autonomous systems—from low-level robot control to AI perception and central management servers.
+- **Content**: Combining robot control and AI perception to build autonomous systems that work in the real world.
 
 ---
 

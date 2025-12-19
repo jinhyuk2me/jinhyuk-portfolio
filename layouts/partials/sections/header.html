@@ -24,27 +24,27 @@
 <!-- Show header on scroll up -->
 {{ if .Site.Params.navbar.stickyNavBar.enable | default false }}
 {{ $showNavBarOnScrollUp := .Site.Params.navbar.stickyNavBar.showOnScrollUp | default false }}
+<div id="scroll-config" data-show-on-scroll-up="{{ $showNavBarOnScrollUp }}" style="display:none;"></div>
 <script>
     var prevScrollPos = window.pageYOffset;
     window.addEventListener("scroll", function showHeaderOnScroll() {
         let profileHeaderElem = document.getElementById("profileHeader");
         let currentScrollPos = window.pageYOffset;
         let resetHeaderStyle = false;
-        let showNavBarOnScrollUp = false;
-    };
-    let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
-    if (showNavBar) {
-        profileHeaderElem.classList.add("showHeaderOnTop");
-    } else {
-        resetHeaderStyle = true;
-    }
-    if (currentScrollPos === 0) {
-        resetHeaderStyle = true;
-    }
-    if (resetHeaderStyle) {
-        profileHeaderElem.classList.remove("showHeaderOnTop");
-    }
-    prevScrollPos = currentScrollPos;
+        let showNavBarOnScrollUp = document.getElementById("scroll-config").dataset.showOnScrollUp === "true";
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if (currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if (resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
     });
 </script>
 {{ end }}
