@@ -195,7 +195,7 @@ languages:
           - title: "School of Electrical Engineering"
             school:
               name: "KAIST"
-              icon: "/images/kaist.gif"
+              icon: "/images/kaist.png"
             date: "2018.03 - 2025.02 (Leave of Absence)"
             content: |-
               Undergraduate studies in Electrical Engineering.
@@ -381,7 +381,7 @@ languages:
           - title: "전기및전자공학부"
             school:
               name: "KAIST"
-              icon: "/images/kaist.gif"
+              icon: "/images/kaist.png"
             date: "2018.03 - 2025.02 (휴학)"
             content: |-
               전기및전자공학부 학부 과정.
