@@ -228,6 +228,7 @@ languages:
           enable: false
         socialNetworks:
           github: https://github.com/jinhyuk2me
+          youtube: https://www.youtube.com/@i-like-robot-sw
 
   ko:
     languageName: "한국어"
@@ -431,3 +432,4 @@ languages:
           enable: false
         socialNetworks:
           github: https://github.com/jinhyuk2me
+          youtube: https://www.youtube.com/@i-like-robot-sw
