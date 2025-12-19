@@ -187,7 +187,7 @@ languages:
         items:
           - title: "ROS2 & AI Autonomous Robot Course"
             school:
-              name: "Addinedu"
+              name: "Addinedu IT Academy"
               icon: "/images/addinedu.webp"
             date: "2025.02 - 2025.08"
             content: |-
