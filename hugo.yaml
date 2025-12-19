@@ -86,6 +86,7 @@ languages:
 
       about:
         enable: true
+        image: /images/me.png
         title: "About Me"
         content: |-
           I am a **Full-Stack Robotics Engineer** capable of building entire autonomous systems from scratch. 
@@ -272,6 +273,7 @@ languages:
 
       about:
         enable: true
+        image: /images/me.png
         title: "About Me"
         content: |-
           저는 바닥부터 전체 시스템을 쌓아올릴 수 있는 **풀스택 로보틱스 엔지니어**입니다.
