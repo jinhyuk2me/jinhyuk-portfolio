@@ -83,6 +83,8 @@ languages:
               url: https://github.com/jinhyuk2me
             - icon: fab fa-linkedin
               url: https://linkedin.com/in/jinhyuk2me
+            - icon: fab fa-youtube
+              url: https://www.youtube.com/@i-like-robot-sw
 
       about:
         enable: true
@@ -287,6 +289,8 @@ languages:
               url: https://github.com/jinhyuk2me
             - icon: fab fa-linkedin
               url: https://linkedin.com/in/jinhyuk2me
+            - icon: fab fa-youtube
+              url: https://www.youtube.com/@i-like-robot-sw
 
       about:
         enable: true
