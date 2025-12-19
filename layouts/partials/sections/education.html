@@ -20,50 +20,59 @@
                     <div class="col-md-9">
                         <div class="card">
                             <div class="card-body">
-                                <div class="float-end">
-                                    <small>{{ .date }}</small>
-                                </div>
-                                <h5 class="card-title">{{ .title }}</h5>
-                                
-                                <div class="d-flex align-items-center mb-2">
-                                    {{ if .school.icon }}
-                                    <div class="me-2 text-primary" style="font-size: 1.5rem; width: 30px; text-align: center;">
-                                        <i class="{{ .school.icon }}"></i>
+                                <div class="row">
+                                    <div class="col-auto d-flex align-items-center justify-content-center px-4">
+                                        {{ if .school.icon }}
+                                        {{ if (findRE `^.*\.(jpg|png|jpeg|svg|webp)$` .school.icon) }}
+                                        <img src="{{ .school.icon }}" alt="{{ .school.name }}"
+                                            style="max-width: 60px; max-height: 60px;">
+                                        {{ else }}
+                                        <div class="text-primary" style="font-size: 2.5rem;">
+                                            <i class="{{ .school.icon }}"></i>
+                                        </div>
+                                        {{ end }}
+                                        {{ end }}
                                     </div>
-                                    {{ end }}
-                                    
-                                    {{ if .school.url }}
-                                    <a href="{{ .school.url }}" target="_blank">
-                                        <h6 class="mb-0">
-                                        {{ .school.name }}
+
+                                    <div class="col border-start ps-4">
+                                        <div class="float-end">
+                                            <small>{{ .date }}</small>
+                                        </div>
+                                        <h5 class="card-title">{{ .title }}</h5>
+
+                                        {{ if .school.url }}
+                                        <a href="{{ .school.url }}" target="_blank">
+                                            <h6 class="text-muted mb-2">
+                                                {{ .school.name }}
+                                            </h6>
+                                        </a>
+                                        {{ else }}
+                                        <h6 class="text-muted mb-2">
+                                            {{ .school.name }}
                                         </h6>
-                                    </a>
-                                    {{ else }}
-                                    <h6 class="mb-0">
-                                    {{ .school.name }}
-                                    </h6>
-                                    {{ end }}
-                                </div>
+                                        {{ end }}
 
-                                {{ if .GPA }}
-                                <div class="py-1">
-                                    GPA:
-                                    <i>
-                                        <small>{{ .GPA }}</small>
-                                    </i> 
-                                </div>
-                                {{ end }}
-                                <div class="py-1 education-content">
-                                    {{ .content | markdownify}}
-                                </div>
+                                        {{ if .GPA }}
+                                        <div class="py-1">
+                                            GPA:
+                                            <i>
+                                                <small>{{ .GPA }}</small>
+                                            </i>
+                                        </div>
+                                        {{ end }}
+                                        <div class="py-1 education-content">
+                                            {{ .content | markdownify}}
+                                        </div>
 
-                                {{ if .featuredLink.enable }}
-                                <div class="py-1">
-                                    <a href="{{ .featuredLink.url }}" class="btn">
-                                        {{ .featuredLink.name | default "Featured" }}
-                                    </a>
+                                        {{ if .featuredLink.enable }}
+                                        <div class="py-1">
+                                            <a href="{{ .featuredLink.url }}" class="btn">
+                                                {{ .featuredLink.name | default "Featured" }}
+                                            </a>
+                                        </div>
+                                        {{ end }}
+                                    </div>
                                 </div>
-                                {{ end }}
                             </div>
                         </div>
                     </div>
