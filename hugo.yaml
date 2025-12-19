@@ -22,8 +22,8 @@ markup:
     renderer:
       unsafe: true
 
-Menus:
-  main:
+# Menus:
+#   main:
     # Manual menu items are removed to avoid duplication with theme's auto-generated sections
 
 
