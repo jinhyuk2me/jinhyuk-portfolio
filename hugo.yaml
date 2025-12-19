@@ -24,21 +24,8 @@ markup:
 
 Menus:
   main:
-    - identifier: projects
-      name: Projects
-      title: My Projects
-      url: /#projects
-      weight: 1
-    - identifier: experience
-      name: Experience
-      title: My Experience
-      url: /#experience
-      weight: 2
-    - identifier: about
-      name: About
-      title: About Me
-      url: /#about
-      weight: 3
+    # Manual menu items are removed to avoid duplication with theme's auto-generated sections
+
 
 params:
   title: "Jinhyuk Jang"
@@ -80,7 +67,7 @@ params:
     title: "Jinhyuk Jang."
     subtitle: "Full-Stack Robotics & AI System Architect"
     content: "I design and build complete autonomous systems—from low-level robot control to AI perception and central management servers."
-    # image: /images/hero.svg  <-- TODO: Add a profile picture if available
+    image: /images/hero.svg
     bottomImage:
       enable: true
     button:
