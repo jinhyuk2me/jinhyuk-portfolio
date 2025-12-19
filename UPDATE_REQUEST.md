@@ -106,4 +106,4 @@
   시스템 설계부터 AI까지 전체 스택을 다루는 풀스택 로보틱스 엔지니어입니다.
   하드웨어 제어, AI 인지, 소프트웨어 서비스를 연결하여 실험실이 아닌 실제 환경에서 작동하는 로봇을 만듭니다.
 
-- **핵심 기술**: [ROS 2 (Humble/Jazzy), Python & C++, Nav2 & Manipulation, Computer Vision (YOLO/OpenCV), Deep Learning (PyTorch), IoT & Embedded (ESP32), Linux & Docker, AWS & MySQL, Communication (TCP/REST/Serial)]
+- **기술 스택**: [ROS 2 (Humble/Jazzy), Python & C++, Nav2 & Manipulation, Computer Vision (YOLO/OpenCV), Deep Learning (PyTorch), IoT & Embedded (ESP32), Linux & Docker, AWS & MySQL, Communication (TCP/REST/Serial)]

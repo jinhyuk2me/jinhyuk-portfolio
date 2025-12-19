@@ -95,7 +95,7 @@ languages:
           I bridge the gap between hardware control, AI perception, and software services to create robots that work in the real world, not just in labs.
         skills:
           enable: true
-          title: "Core Technologies:"
+          title: "Tech Stack:"
           items:
             - "ROS 2 (Humble/Jazzy)"
             - "Python & C++"
@@ -160,7 +160,7 @@ languages:
                 url: https://github.com/jinhyuk2me/Bikecast
 
           - title: "DUST: Smart Logistics Control"
-            content: "IoT logistics platform integrating AGVs, conveyors, and gates with FSM-based control. Improved response speed 3x using binary protocol. Resolved RFID-induced PWM instability with timing control."
+            content: "RFID-based IoT platform for integrated control of AGVs, conveyors, and gates. Improved response speed 3x using binary protocol."
             image: /images/projects/dust_banner.png
             badges:
               - "IoT"
@@ -208,7 +208,7 @@ languages:
               icon: "/images/kaist.png"
             date: "2018.03 - 2025.02 (Leave of Absence)"
             content: |-
-              Undergraduate studies in Electrical Engineering.
+              Undergraduate in Electrical Engineering (on leave of absence). *Graduation expected
 
           - title: "ROS2 & AI Autonomous Robot Bootcamp"
             school:
@@ -216,8 +216,7 @@ languages:
               icon: "/images/addinedu.webp"
             date: "2025.02 - 2025.08"
             content: |-
-              Intensive training on ROS2, Autonomous Driving, Deep Learning, and Embedded Systems.
-              Successfully completed 5 major projects as a Team Lead.
+              Completed ROS2 & AI Autonomous Robot Bootcamp
 
       contact:
         enable: true
@@ -301,7 +300,7 @@ languages:
           하드웨어 제어, AI 인지, 소프트웨어 서비스를 연결하여 실험실이 아닌 실제 환경에서 작동하는 로봇을 만듭니다.
         skills:
           enable: true
-          title: "핵심 기술:"
+          title: "기술 스택:"
           items:
             - "ROS 2 (Humble/Jazzy)"
             - "Python & C++"
