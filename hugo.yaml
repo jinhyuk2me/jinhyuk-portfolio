@@ -55,7 +55,7 @@ params:
     enableSeparator: false
     menus:
       disableAbout: false
-      disableExperience: true
+      disableExperience: false
       disableEducation: false
       disableProjects: false
       disableAchievements: true
@@ -171,31 +171,18 @@ params:
 
   # Experience
   experience:
-    enable: false
-    title: "Experience"
+    enable: true
+    title: "Work Experience"
     items:
-      - company: "Addinedu IT Academy"
+      - company: "LK ROBOTICS"
         jobs:
-          - name: "Team Lead & Ststen Ar"
-            date: "2025.02 - 2025.08"
+          - name: "Embedded AI Engineer"
+            date: "2025.10 - 2025.12"
             content: |
-              - **Leadership**: Led 4-person cross-functional teams (SW/HW/AI) across 5 intensive projects; managed Agile sprints via **Jira/Confluence**.
-              - **Architecture**: Designed scalable **ROS2** software architectures and **FSM**-based central control systems for multi-robot coordination.
-              - **System Integration**: Bridged hardware control, AI perception, and backend servers into unified, working products.
-
-          - name: "AI & Perception Engineer"
-            date: "2025.05 - 2025.07"
-            content: |
-              - **Synthetic Data Pipeline**: Created Unity/Blender environments to generate synthetic datasets, solving data scarcity for bird strike detection (**FALCON**).
-              - **Vision AI**: Implemented **YOLOv8** & **DeepSORT** for real-time object tracking and obstacle avoidance on edge devices.
-              - **Data Analytics**: Built forecasting models using **XGBoost** and **Pandas** for public transit demand prediction (**Bikecast**).
-
-          - name: "IoT & Full-Stack Developer"
-            date: "2025.03 - 2025.08"
-            content: |
-              - **Protocol Design**: Engineered custom TCP/Serial communication protocols for **ESP32** and MCU integration (Elevators, Conveyors).
-              - **Backend & DB**: Designed **MySQL** schemas and RESTful APIs for data logging and system management.
-              - **GUI**: Developed user-friendly control interfaces using **PyQt** for real-time monitoring.
+              - Developed **PyroVision**, an early fire detection system using **NXP i.MX8M Plus** NPU.
+              - Implemented **RGB-IR Sensor Fusion** algorithm to minimize false positives from smoke/fog.
+              - Optimized **YOLOv8** & **TensorFlow Lite** models for edge inference on embedded devices.
+              - Built real-time monitoring infrastructure using **TCP/IP**, **GStreamer**, and **PyQt6**.
 
   # Education
   education:
