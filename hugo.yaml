@@ -202,6 +202,14 @@ languages:
         enable: true
         title: "Education"
         items:
+          - title: "School of Electrical Engineering"
+            school:
+              name: "KAIST"
+              icon: "/images/kaist.png"
+            date: "2018.03 - 2025.02 (Leave of Absence)"
+            content: |-
+              Undergraduate studies in Electrical Engineering.
+
           - title: "ROS2 & AI Autonomous Robot Bootcamp"
             school:
               name: "Addinedu IT Academy"
@@ -210,14 +218,6 @@ languages:
             content: |-
               Intensive training on ROS2, Autonomous Driving, Deep Learning, and Embedded Systems.
               Successfully completed 5 major projects as a Team Lead.
-
-          - title: "School of Electrical Engineering"
-            school:
-              name: "KAIST"
-              icon: "/images/kaist.png"
-            date: "2018.03 - 2025.02 (Leave of Absence)"
-            content: |-
-              Undergraduate studies in Electrical Engineering.
 
       contact:
         enable: true
@@ -408,6 +408,14 @@ languages:
         enable: true
         title: "학력"
         items:
+          - title: "전기및전자공학부"
+            school:
+              name: "KAIST"
+              icon: "/images/kaist.png"
+            date: "2018.03 - 2025.02 (휴학)"
+            content: |-
+              전기및전자공학부 학부 과정.
+
           - title: "ROS2 & AI 자율주행 로봇 부트캠프"
             school:
               name: "애드인에듀 IT 아카데미"
@@ -416,14 +424,6 @@ languages:
             content: |-
               ROS2, 자율주행, 딥러닝, 임베디드 시스템 집중 교육 과정.
               팀 리더로서 5개의 주요 프로젝트 성공적 완수.
-
-          - title: "전기및전자공학부"
-            school:
-              name: "KAIST"
-              icon: "/images/kaist.png"
-            date: "2018.03 - 2025.02 (휴학)"
-            content: |-
-              전기및전자공학부 학부 과정.
 
       contact:
         enable: true
