@@ -1,0 +1,34 @@
+{
+  "greeting": "Hi, I am",
+  "name": "Jinhyuk Jang.",
+  "subtitle": {
+    "text": "I build {actions} from {perception}.",
+    "highlights": {
+      "actions": "Actions",
+      "perception": "Perception"
+    }
+  },
+  "description": "I build complete autonomous systems—from low-level robot control to AI perception and central management servers.",
+  "profileImage": "images/me.png",
+  "cta": {
+    "text": "Check my work",
+    "link": "#projects"
+  },
+  "social": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/jinhyuk2me",
+      "icon": "fab fa-github"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/in/jinhyuk2me",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/@i-like-robot-sw",
+      "icon": "fab fa-youtube"
+    }
+  ]
+}

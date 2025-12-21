@@ -1,0 +1,14 @@
+[
+    {
+        "school": "KAIST",
+        "degree": "School of Electrical Engineering",
+        "date": "2018.03 - 2025.02 (Leave of Absence)",
+        "logo": "images/kaist.png"
+    },
+    {
+        "school": "Addinedu IT Academy",
+        "degree": "ROS2 & AI Autonomous Robot Bootcamp",
+        "date": "2025.02 - 2025.08",
+        "logo": "images/addinedu.webp"
+    }
+]

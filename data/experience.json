@@ -1,0 +1,14 @@
+[
+    {
+        "company": "LK ROBOTICS",
+        "position": "Embedded AI Engineer",
+        "date": "2025.10 - ",
+        "achievements": [
+            "Developed PyroVision, an early fire detection system using NXP i.MX8M Plus NPU.",
+            "Implemented RGB-IR Sensor Fusion algorithm to minimize false positives from smoke/fog.",
+            "Optimized YOLOv8 & TensorFlow Lite models for edge inference on embedded devices.",
+            "Conducted advanced research on Transformer-based Re-ID (TransReID) and MOT (ByteTrack/OC-SORT) algorithms using YOLOv11.",
+            "Built real-time monitoring infrastructure using TCP/IP, GStreamer, and PyQt6."
+        ]
+    }
+]
