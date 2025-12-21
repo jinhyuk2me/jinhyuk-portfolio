@@ -2,7 +2,8 @@
 <section id="hero" class="py-5 align-middle">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
         <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-8 content {{ if .Site.Params.animate }}animate{{ end }}" id="primary-font">
+            <div class="col-sm-12 col-md-12 col-lg-8 content {{ if .Site.Params.animate }}animate{{ end }}"
+                id="primary-font">
                 <span class="subtitle">
                     {{ .Site.Params.hero.intro }}
                 </span>
@@ -17,11 +18,16 @@
                 </p>
                 <div class="row">
                     <div class="col-auto h-100">
+                        {{ if .Site.Params.hero.resumeButton.enable }}
+                        <a href="{{ .Site.Params.hero.resumeButton.url }}" class="btn" style="margin-right: 15px;" {{
+                            cond .Site.Params.hero.resumeButton.newPage "target='_blank'" "" }}>
+                            {{ .Site.Params.hero.resumeButton.name }}
+                        </a>
+                        {{ end }}
                         {{ if .Site.Params.hero.button.enable }}
-                        <a href="{{ .Site.Params.hero.button.url }}" class="btn" {{ cond .Site.Params.hero.button.download "download" "" }}
-			  {{ if .Site.Params.hero.button.newPage | default true }}
-                          target="_blank"
-                          {{ end }}>
+                        <a href="{{ .Site.Params.hero.button.url }}" class="btn" {{ cond
+                            .Site.Params.hero.button.download "download" "" }} {{ if .Site.Params.hero.button.newPage |
+                            default true }} target="_blank" {{ end }}>
                             {{ .Site.Params.hero.button.name }}
                         </a>
                         {{ end }}
@@ -33,11 +39,11 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4">
                 <div class="row justify-content-center">
-                    <div class="col-sm-12 col-md-9 pt-5 image {{ if .Site.Params.animate }}animate{{ end }} px-5 px-md-5 px-lg-0 text-center">
+                    <div
+                        class="col-sm-12 col-md-9 pt-5 image {{ if .Site.Params.animate }}animate{{ end }} px-5 px-md-5 px-lg-0 text-center">
                         <img src="{{ .Site.Params.hero.image }}"
                             class="img-thumbnail mx-auto{{ if .Site.Params.hero.roundImage }} rounded-circle{{ end }}"
-                            alt=""
-                        >
+                            alt="">
                     </div>
                 </div>
             </div>
