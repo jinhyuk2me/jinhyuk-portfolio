@@ -615,6 +615,11 @@ section {
     text-align: center;
 }
 
+.text-center .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .btn-lg {
     padding: 1rem 2.5rem;
     font-size: 1.1rem;
