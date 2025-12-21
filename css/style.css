@@ -349,24 +349,22 @@ section {
 }
 
 /* About Section */
-.about-grid {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 5rem;
-    align-items: start;
-    margin-bottom: 4rem;
+.about-text {
+    max-width: 800px;
+    margin-bottom: 3rem;
 }
 
 .about-text p {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    line-height: 1.7;
+    font-size: 1.15rem;
+    line-height: 1.8;
 }
 
 /* Education Section - Full Width */
 .education-section {
-    margin-top: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
     padding-top: 3rem;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -375,6 +373,13 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+}
+
+/* Tech Stack Section - Full Width */
+.tech-stack-section {
+    margin-top: 1rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .section-subtitle {
@@ -478,6 +483,12 @@ section {
 
     .hero-title {
         font-size: 40px;
+    }
+}
+
+@media (max-width: 968px) {
+    .education-grid {
+        grid-template-columns: 1fr;
     }
 }
 
