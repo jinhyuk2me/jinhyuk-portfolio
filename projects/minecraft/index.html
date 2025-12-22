@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FALCON | Project Detail</title>
-    <meta name="description" content="FALCON: Airport Safety AI - Bird strike and FOD prevention system">
+    <title>Minecraft + ROS2 | Project Detail</title>
+    <meta name="description" content="Minecraft with ROS2 & SLAM - Robotics simulation experiment">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <style>
         /* Specific Detail Page Styles */
         .project-hero {
             padding: 180px 0 100px;
-            background: linear-gradient(to bottom, rgba(13, 17, 23, 0.9), var(--bg-color)), url('../images/projects/falcon_banner.png') no-repeat center center/cover;
+            background: linear-gradient(to bottom, rgba(13, 17, 23, 0.9), var(--bg-color)), url('../../images/projects/minecraft_banner.png') no-repeat center center/cover;
             position: relative;
         }
 
@@ -116,20 +116,20 @@
     <!-- Header -->
     <header class="site-header">
         <div class="container header-inner">
-            <a href="../index.html" class="logo">
+            <a href="../../index.html" class="logo">
                 <span class="text-cyan">&lt;</span>Jinhyuk<span class="text-amber">/&gt;</span>
             </a>
 
             <nav class="main-nav">
                 <ul>
-                    <li><a href="../index.html#about">About</a></li>
-                    <li><a href="../index.html#experience">Experience</a></li>
-                    <li><a href="../index.html#projects">Projects</a></li>
-                    <li><a href="../index.html#contact">Contact</a></li>
+                    <li><a href="../../index.html#about">About</a></li>
+                    <li><a href="../../index.html#experience">Experience</a></li>
+                    <li><a href="../../index.html#projects">Projects</a></li>
+                    <li><a href="../../index.html#contact">Contact</a></li>
                 </ul>
             </nav>
 
-            <a href="https://github.com/jinhyuk2me/FALCON" target="_blank" class="btn btn-outline">
+            <a href="https://github.com/jinhyuk2me/Minecraft_with_ROS2" target="_blank" class="btn btn-outline">
                 <i class="fab fa-github"></i> View Code
             </a>
         </div>
@@ -140,21 +140,21 @@
         <section class="project-hero">
             <div class="container">
                 <div class="project-meta">
-                    <span class="project-meta-item"><i class="far fa-calendar"></i> 2025.04 - 2025.05</span>
-                    <span class="project-meta-item"><i class="fas fa-users"></i> Team Project</span>
-                    <span class="project-meta-item"><i class="fas fa-eye"></i> Computer Vision / AI</span>
+                    <span class="project-meta-item"><i class="far fa-calendar"></i> 2024</span>
+                    <span class="project-meta-item"><i class="fas fa-flask"></i> Experimental Project</span>
+                    <span class="project-meta-item"><i class="fas fa-gamepad"></i> Simulation / ROS 2</span>
                 </div>
-                <h1 class="hero-title">FALCON: Airport Safety AI</h1>
+                <h1 class="hero-title">Minecraft with ROS 2 & SLAM</h1>
                 <p class="hero-desc">
-                    A comprehensive airport safety system detecting Bird Strikes, FOD (Foreign Object Debris), and
-                    ground incursions.
-                    Leverages <strong>Synthetic Data</strong> from Unity/Blender for robust AI training.
+                    A unique robotics experiment bridging the gap between gaming and robotics control.
+                    Uses <strong>micro-ROS</strong> to control a Minecraft character physically and perform real-time
+                    SLAM mapping inside the game world.
                 </p>
                 <div class="hero-actions">
-                    <a href="https://github.com/jinhyuk2me/FALCON" target="_blank" class="btn btn-primary">
+                    <a href="https://github.com/jinhyuk2me/Minecraft_with_ROS2" target="_blank" class="btn btn-primary">
                         <i class="fab fa-github"></i> Repository
                     </a>
-                    <a href="../index.html#projects" class="btn btn-outline">Back to Projects</a>
+                    <a href="../../index.html#projects" class="btn btn-outline">Back to Projects</a>
                 </div>
             </div>
         </section>
@@ -167,9 +167,10 @@
                 <div class="content-block">
                     <h3>Project Overview</h3>
                     <p>
-                        FALCON enhances airport safety by providing real-time risk discovery and decision support.
-                        It consists of "Hawkeye" for ground and tower control monitoring, and "RedWing" for pilot
-                        assistance.
+                        This project demonstrates the flexibility of ROS 2 by treating Minecraft as a robot simulation
+                        environment.
+                        It connects a physical ESP32-based joystick via micro-ROS to control the in-game player and
+                        extracts sensor data (simulated LiDAR) to generate 2D maps using Cartographer.
                     </p>
                 </div>
 
@@ -178,39 +179,32 @@
                     <h3>Key Features</h3>
                     <div class="feature-list">
                         <div class="feature-item">
-                            <h4><i class="fas fa-fighter-jet"></i> Hawkeye (ATC AI)</h4>
-                            <p>Detects ground hazards (vehicles, people) and worker safety incidents (falls) using CCTV
-                                feeds. Controls zone-based access.</p>
+                            <h4><i class="fas fa-gamepad"></i> Physical to Virtual Control</h4>
+                            <p>Real-time control of the Minecraft character using a physical joystick, bridged via ESP32
+                                and micro-ROS agent.</p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-broadcast-tower"></i> RedWing (Pilot AI)</h4>
-                            <p>Provides real-time voice alerts (TTS) for risks like bird activity. Interprets marshaller
-                                hand signals using Pose Estimation.</p>
+                            <h4><i class="fas fa-map"></i> In-Game SLAM</h4>
+                            <p>Generates real-time 2D occupancy grid maps of the Minecraft world by processing simulated
+                                laser scan data with Google Cartographer.</p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-cubes"></i> Synthetic Data Pipeline</h4>
-                            <p>Utilizes Unity and Blender to generate large-scale labeled datasets for rare events like
-                                bird strikes and runway debris.</p>
-                        </div>
-                        <div class="feature-item">
-                            <h4><i class="fas fa-map-marked-alt"></i> 3D Tracking</h4>
-                            <p>Triangulation-based 3D tracking for birds and ArUco-based mapping for ground vehicles.
-                            </p>
+                            <h4><i class="fas fa-network-wired"></i> Embedded Integration</h4>
+                            <p>Seamless communication between embedded hardware (ESP32) and the PC-based ROS 2
+                                ecosystem.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Core Tech -->
+                <!-- System Config -->
                 <div class="content-block">
-                    <h3>Core Technology</h3>
+                    <h3>System Configuration</h3>
                     <ul>
-                        <li><strong>Object Detection:</strong> YOLOv8 pipelines trained on hybrid (real + synthetic)
-                            datasets.</li>
-                        <li><strong>Action Recognition:</strong> TCN (Temporal Convolutional Network) for interpreting
-                            complex marshaller hand gestures (98.99% accuracy).</li>
-                        <li><strong>Simulation:</strong> Custom Unity-based airport simulator (RunwaySim) for generating
-                            training scenarios.</li>
-                        <li><strong>Pose Estimation:</strong> YOLOv8n-pose for detecting falls and worker status.</li>
+                        <li><strong>Input:</strong> Physical Joystick connected to ESP32.</li>
+                        <li><strong>Transport:</strong> micro-ROS (Serial/UDP) -> ROS 2 Agent.</li>
+                        <li><strong>Processing:</strong> ROS 2 Nodes convert joystick inputs to <code>/cmd_vel</code>
+                            and process <code>/player/pointcloud</code> for SLAM.</li>
+                        <li><strong>Output:</strong> Minecraft character movement and RViz2 map visualization.</li>
                     </ul>
                 </div>
 
@@ -218,37 +212,23 @@
                 <div class="content-block">
                     <h3>Tech Stack</h3>
                     <div class="tech-grid">
-                        <span class="tech-tag">YOLOv8 / YOLOv11</span>
-                        <span class="tech-tag">Unity 3D</span>
-                        <span class="tech-tag">Blender</span>
-                        <span class="tech-tag">Python (PyTorch)</span>
-                        <span class="tech-tag">PyQt</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">ROS 2 (Humble)</span>
+                        <span class="tech-tag">micro-ROS</span>
+                        <span class="tech-tag">Google Cartographer</span>
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Minecraft Forge</span>
                     </div>
                 </div>
 
-                <!-- Challenges -->
+                <!-- Notes -->
                 <div class="content-block">
-                    <h3>Technical Challenges & Solutions</h3>
-
-                    <div class="challenge-item">
-                        <div class="challenge-title">Data Scarcity for Rare Events</div>
-                        <p><strong>Problem:</strong> Lack of real-world footage for bird strikes and specific airport
-                            accidents.<br>
-                            <strong>Solution:</strong> Built a synthetic data pipeline using Blender and Unity to
-                            generate thousands of photorealistic, automatically labeled training images.
-                        </p>
-                    </div>
-
-                    <div class="challenge-item">
-                        <div class="challenge-title">Pose Estimation for Falls</div>
-                        <p><strong>Problem:</strong> Standard models struggled to detect people lying down or in unusual
-                            orientations.<br>
-                            <strong>Solution:</strong> Generated synthetic pose data with various camera angles and body
-                            orientations to fine-tune the model.
-                        </p>
-                    </div>
+                    <h3>Experiment Notes</h3>
+                    <p>
+                        Due to the latency in extracting point clouds from the Java-based game engine, rapid rotations
+                        can cause map drift.
+                        Best mapping results are achieved with slow, deliberate linear movements.
+                    </p>
                 </div>
 
             </div>
