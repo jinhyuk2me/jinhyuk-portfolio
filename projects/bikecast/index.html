@@ -173,24 +173,35 @@
                     </p>
                 </div>
 
-                <!-- Key Features -->
+                <!-- Key Engineering Contributions -->
                 <div class="content-block">
-                    <h3>Key Services</h3>
+                    <h3>Key Engineering Contributions</h3>
                     <div class="feature-list">
                         <div class="feature-item">
-                            <h4><i class="fas fa-clock"></i> Demand Prediction (SR_01)</h4>
-                            <p>Predicts hourly rental numbers for specific stations based on time, weather (temp, rain),
-                                and seasonality. achieved R² = 0.835.</p>
+                            <h4><i class="fas fa-database"></i> Big Data Infrastructure</h4>
+                            <p>
+                                Engineered the <strong>MySQL database schema</strong> to efficiently handle 44M+ trip
+                                records.
+                                Implemented advanced indexing strategies that reduced complex query retrieval times from
+                                <strong>hours to tens of seconds</strong> (99% reduction).
+                            </p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-map-pin"></i> Site Recommendation (SR_02)</h4>
-                            <p>Recommends optimal locations for new bike stations by analyzing spatial features like
-                                proximity to parks, subways, and population density.</p>
+                            <h4><i class="fas fa-chart-line"></i> Demand Forecasting Model (SR_01)</h4>
+                            <p>
+                                Developed the core <strong>XGBoost regression model</strong> to predict station-level
+                                hourly demand. Feature engineering included creating composite variables for weather
+                                impact, seasonality, and proximity to transit hubs, achieving an R² of 0.835.
+                            </p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-database"></i> High-Performance Querying</h4>
-                            <p>Optimized SQL queries on 44M+ records, reducing data retrieval time from hours to seconds
-                                using proper indexing.</p>
+                            <h4><i class="fas fa-map-marked-alt"></i> Site Recommendation Engine (SR_02)</h4>
+                            <p>
+                                Implemented the <strong>Site Recommendation logic</strong> that analyzes spatial
+                                correlations.
+                                The algorithm identifies "underserved" high-potential areas by cross-referencing
+                                population density, subway exits, and existing station overflow patterns.
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -196,28 +196,44 @@
                     </p>
                 </div>
 
-                <!-- Key Features -->
+                <!-- Key Engineering Contributions -->
                 <div class="content-block">
-                    <h3>Key Features</h3>
+                    <h3>Key Engineering Contributions</h3>
                     <div class="feature-list">
                         <div class="feature-item">
-                            <h4><i class="fas fa-robot"></i> Remote Shopping & Picking</h4>
-                            <p>Autonomous navigation to efficient pick locations. Vision-guided arm control for precise
-                                item grasping.</p>
+                            <h4><i class="fas fa-network-wired"></i> Central Control Architecture</h4>
+                            <p>
+                                Designed the complete <strong>multi-robot control architecture</strong> bridging ROS 2
+                                nodes, LLM services, and the user app.
+                                Implemented a hybrid <strong>TCP/IP & UDP protocol</strong> to ensure reliable command
+                                delivery while maintaining real-time performance for robot state monitoring.
+                            </p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-box-open"></i> Automated Packing</h4>
-                            <p>Coordinated handover between picking and packing robots using dual-arm manipulation.</p>
+                            <h4><i class="fas fa-server"></i> Main Server Implementation</h4>
+                            <p>
+                                Built the <strong>central backend service</strong> that orchestrates the entire shopping
+                                workflow.
+                                It manages the bi-directional communication between the "Pickee" and "Packee" robots,
+                                handles task allocation, and prevents deadlock situations during collaborative tasks.
+                            </p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-desktop"></i> Admin Monitoring</h4>
-                            <p>Real-time dashboard showing robot status (battery, location), active tasks, and network
-                                diagnostics.</p>
+                            <h4><i class="fas fa-microchip"></i> FSM-Based Robot Control</h4>
+                            <p>
+                                Developed the core <strong>Finite State Machine (FSM)</strong> logic for the robots.
+                                This ensures robust failure recovery (e.g., retrying docking on failure) and smooth
+                                transitions between various operational modes like "Shopping," "Packing," and
+                                "Night/Stocking" modes.
+                            </p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-microphone"></i> LLM Voice Interaction</h4>
-                            <p>Fine-tuned LLM (Qwen) with Whisper STT to interpret vague commands like "Go to the snack
-                                corner".</p>
+                            <h4><i class="fas fa-terminal"></i> Admin Debugging Dashboard</h4>
+                            <p>
+                                Created a modular <strong>GUI dashboard</strong> for engineers to monitor raw TCP data
+                                packets, check detailed ROS 2 node health, and visualize real-time robot
+                                battery/location status, significantly reducing on-site debugging time.
+                            </p>
                         </div>
                     </div>
                 </div>

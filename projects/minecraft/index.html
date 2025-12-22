@@ -174,24 +174,37 @@
                     </p>
                 </div>
 
-                <!-- Key Features -->
+                <!-- Key Engineering Contributions -->
                 <div class="content-block">
-                    <h3>Key Features</h3>
+                    <h3>Key Engineering Contributions</h3>
                     <div class="feature-list">
                         <div class="feature-item">
-                            <h4><i class="fas fa-gamepad"></i> Physical to Virtual Control</h4>
-                            <p>Real-time control of the Minecraft character using a physical joystick, bridged via ESP32
-                                and micro-ROS agent.</p>
+                            <h4><i class="fas fa-link"></i> Java-ROS 2 Bridge</h4>
+                            <p>
+                                Developed a custom <strong>Minecraft Forge Mod (Java)</strong> that acts as a
+                                middleware.
+                                It hooks into the game engine to extract simulated ray-tracing data and exposes it as
+                                ROS 2 topics (<code>/scan</code>, <code>/odom</code>), effectively turning the game into
+                                a high-fidelity simulator.
+                            </p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-map"></i> In-Game SLAM</h4>
-                            <p>Generates real-time 2D occupancy grid maps of the Minecraft world by processing simulated
-                                laser scan data with Google Cartographer.</p>
+                            <h4><i class="fas fa-microchip"></i> Embedded Control Interface</h4>
+                            <p>
+                                Implemented the physical hardware interface using an <strong>ESP32 and
+                                    micro-ROS</strong>.
+                                Wrote the firmware to sample analog joystick data and stream it via UDP to the ROS 2
+                                agent with minimal latency for smooth character control.
+                            </p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-network-wired"></i> Embedded Integration</h4>
-                            <p>Seamless communication between embedded hardware (ESP32) and the PC-based ROS 2
-                                ecosystem.</p>
+                            <h4><i class="fas fa-map"></i> SLAM Pipeline Configuration</h4>
+                            <p>
+                                Configured and tuned the <strong>Google Cartographer</strong> Lua configuration files to
+                                accept the noisy, simulated laser scans from Minecraft.
+                                Optimized trajectory builder parameters to maintain map consistency despite utilizing a
+                                non-standard simulation environment.
+                            </p>
                         </div>
                     </div>
                 </div>

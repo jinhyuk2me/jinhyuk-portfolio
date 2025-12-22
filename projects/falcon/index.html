@@ -173,28 +173,35 @@
                     </p>
                 </div>
 
-                <!-- Key Features -->
+                <!-- Key Engineering Contributions -->
                 <div class="content-block">
-                    <h3>Key Features</h3>
+                    <h3>Key Engineering Contributions</h3>
                     <div class="feature-list">
                         <div class="feature-item">
-                            <h4><i class="fas fa-fighter-jet"></i> Hawkeye (ATC AI)</h4>
-                            <p>Detects ground hazards (vehicles, people) and worker safety incidents (falls) using CCTV
-                                feeds. Controls zone-based access.</p>
-                        </div>
-                        <div class="feature-item">
-                            <h4><i class="fas fa-broadcast-tower"></i> RedWing (Pilot AI)</h4>
-                            <p>Provides real-time voice alerts (TTS) for risks like bird activity. Interprets marshaller
-                                hand signals using Pose Estimation.</p>
-                        </div>
-                        <div class="feature-item">
                             <h4><i class="fas fa-cubes"></i> Synthetic Data Pipeline</h4>
-                            <p>Utilizes Unity and Blender to generate large-scale labeled datasets for rare events like
-                                bird strikes and runway debris.</p>
+                            <p>
+                                Built an end-to-end <strong>data generation pipeline</strong> using Unity and Blender
+                                scripting.
+                                This automated system created thousands of labeled images for rare "long-tail" events
+                                like bird strikes and runway debris, solving the critical lack of real-world training
+                                data.
+                            </p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-map-marked-alt"></i> 3D Tracking</h4>
-                            <p>Triangulation-based 3D tracking for birds and ArUco-based mapping for ground vehicles.
+                            <h4><i class="fas fa-broadcast-tower"></i> Pilot Assist AI (RedWing)</h4>
+                            <p>
+                                Implemented the core logic for the "RedWing" system, integrating <strong>YOLOv8</strong>
+                                for hazard detection and a <strong>Bird Strike Risk Analysis (BDS)</strong> model.
+                                Optimized inference for real-time alerts to pilots.
+                            </p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-hands-helping"></i> Action Recognition</h4>
+                            <p>
+                                Designed and trained a <strong>Temporal Convolutional Network (TCN)</strong> to
+                                interpret complex marshaller hand signals.
+                                This transformed continuous pose estimation data into actionable commands for the
+                                digital cockpit system.
                             </p>
                         </div>
                     </div>

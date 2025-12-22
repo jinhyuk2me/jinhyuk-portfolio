@@ -173,29 +173,34 @@
                     </p>
                 </div>
 
-                <!-- Key Features -->
+                <!-- Key Engineering Contributions -->
                 <div class="content-block">
-                    <h3>Key Features</h3>
+                    <h3>Key Engineering Contributions</h3>
                     <div class="feature-list">
                         <div class="feature-item">
-                            <h4><i class="fas fa-truck-moving"></i> Intelligent AGV</h4>
-                            <p>RFID-based positioning, collision avoidance, and autonomous line following for reliable
-                                material transport.</p>
+                            <h4><i class="fas fa-sitemap"></i> Unified Control Architecture</h4>
+                            <p>
+                                Designed the overarching <strong>system architecture</strong> that unifies disparate
+                                hardware (mobile AGVs, static gates, conveyor belts) into a single synchronous control
+                                loop. Defined the master-slave state machine logic.
+                            </p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-industry"></i> Facility Integration</h4>
-                            <p>Unified control of gates and conveyors, ensuring seamless handovers between static and
-                                mobile equipment.</p>
+                            <h4><i class="fas fa-bolt"></i> Custom Binary Protocol</h4>
+                            <p>
+                                Developed a lightweight <strong>custom TCP/IP binary protocol</strong> instead of
+                                standard JSON.
+                                This minimized overhead, reducing command latency by <strong>3x</strong> and enabling
+                                sub-second synchronization between the central server and embedded controllers.
+                            </p>
                         </div>
                         <div class="feature-item">
-                            <h4><i class="fas fa-server"></i> Central Control Server</h4>
-                            <p>FSM-based orchestration logic that manages missions, traffic flow, and emergency
-                                overrides.</p>
-                        </div>
-                        <div class="feature-item">
-                            <h4><i class="fas fa-tachometer-alt"></i> Performance Protocol</h4>
-                            <p>Custom byte-level TCP protocol replaced JSON for critical commands, reducing latency by
-                                3x.</p>
+                            <h4><i class="fas fa-desktop"></i> Central Control Server & Dashboard</h4>
+                            <p>
+                                Built the multi-threaded <strong>Central Control Server</strong> in Python.
+                                Developed the operator dashboard using <strong>PyQt</strong>, which provides a real-time
+                                "digital twin" view of the factory floor, showing active AGV paths and equipment states.
+                            </p>
                         </div>
                     </div>
                 </div>
