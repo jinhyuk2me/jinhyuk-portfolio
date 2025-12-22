@@ -13,7 +13,7 @@ class PortfolioLoader {
      */
     async fetchData(filename) {
         try {
-            const response = await fetch(`data/${filename}`);
+            const response = await fetch(`data/${filename}?v=${new Date().getTime()}`);
             if (!response.ok) {
                 throw new Error(`Failed to load ${filename}`);
             }
