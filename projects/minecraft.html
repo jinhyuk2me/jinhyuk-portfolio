@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minecraft + ROS2 | Project Detail</title>
+    <meta name="description" content="Minecraft with ROS2 & SLAM - Robotics simulation experiment">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Specific Detail Page Styles */
+        .project-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(to bottom, rgba(13, 17, 23, 0.9), var(--bg-color)), url('../images/projects/minecraft_banner.png') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .project-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 17, 23, 0.7);
+            z-index: -1;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            font-family: var(--font-code);
+            font-size: 0.9rem;
+        }
+
+        .project-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-section {
+            padding: 4rem 0;
+        }
+
+        .content-block {
+            margin-bottom: 3rem;
+        }
+
+        .content-block h3 {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            margin-bottom: 1.2rem;
+            border-left: 3px solid var(--accent-cyan);
+            padding-left: 1rem;
+        }
+
+        .content-block p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .feature-item h4 {
+            color: var(--accent-cyan);
+            margin-bottom: 0.8rem;
+        }
+
+        .tech-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .challenge-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .challenge-title {
+            color: var(--accent-amber);
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <span class="text-cyan">&lt;</span>Jinhyuk<span class="text-amber">/&gt;</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#experience">Experience</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://github.com/jinhyuk2me/Minecraft_with_ROS2" target="_blank" class="btn btn-outline">
+                <i class="fab fa-github"></i> View Code
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-meta">
+                    <span class="project-meta-item"><i class="far fa-calendar"></i> 2024</span>
+                    <span class="project-meta-item"><i class="fas fa-flask"></i> Experimental Project</span>
+                    <span class="project-meta-item"><i class="fas fa-gamepad"></i> Simulation / ROS 2</span>
+                </div>
+                <h1 class="hero-title">Minecraft with ROS 2 & SLAM</h1>
+                <p class="hero-desc">
+                    A unique robotics experiment bridging the gap between gaming and robotics control.
+                    Uses <strong>micro-ROS</strong> to control a Minecraft character physically and perform real-time
+                    SLAM mapping inside the game world.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://github.com/jinhyuk2me/Minecraft_with_ROS2" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Repository
+                    </a>
+                    <a href="../index.html#projects" class="btn btn-outline">Back to Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="detail-section">
+            <div class="container">
+
+                <!-- Overview -->
+                <div class="content-block">
+                    <h3>Project Overview</h3>
+                    <p>
+                        This project demonstrates the flexibility of ROS 2 by treating Minecraft as a robot simulation
+                        environment.
+                        It connects a physical ESP32-based joystick via micro-ROS to control the in-game player and
+                        extracts sensor data (simulated LiDAR) to generate 2D maps using Cartographer.
+                    </p>
+                </div>
+
+                <!-- Key Features -->
+                <div class="content-block">
+                    <h3>Key Features</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h4><i class="fas fa-gamepad"></i> Physical to Virtual Control</h4>
+                            <p>Real-time control of the Minecraft character using a physical joystick, bridged via ESP32
+                                and micro-ROS agent.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-map"></i> In-Game SLAM</h4>
+                            <p>Generates real-time 2D occupancy grid maps of the Minecraft world by processing simulated
+                                laser scan data with Google Cartographer.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-network-wired"></i> Embedded Integration</h4>
+                            <p>Seamless communication between embedded hardware (ESP32) and the PC-based ROS 2
+                                ecosystem.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Config -->
+                <div class="content-block">
+                    <h3>System Configuration</h3>
+                    <ul>
+                        <li><strong>Input:</strong> Physical Joystick connected to ESP32.</li>
+                        <li><strong>Transport:</strong> micro-ROS (Serial/UDP) -> ROS 2 Agent.</li>
+                        <li><strong>Processing:</strong> ROS 2 Nodes convert joystick inputs to <code>/cmd_vel</code>
+                            and process <code>/player/pointcloud</code> for SLAM.</li>
+                        <li><strong>Output:</strong> Minecraft character movement and RViz2 map visualization.</li>
+                    </ul>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="content-block">
+                    <h3>Tech Stack</h3>
+                    <div class="tech-grid">
+                        <span class="tech-tag">ROS 2 (Humble)</span>
+                        <span class="tech-tag">micro-ROS</span>
+                        <span class="tech-tag">Google Cartographer</span>
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Minecraft Forge</span>
+                    </div>
+                </div>
+
+                <!-- Notes -->
+                <div class="content-block">
+                    <h3>Experiment Notes</h3>
+                    <p>
+                        Due to the latency in extracting point clouds from the Java-based game engine, rapid rotations
+                        can cause map drift.
+                        Best mapping results are achieved with slow, deliberate linear movements.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="social-links">
+                    <a href="https://github.com/jinhyuk2me" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/jinhyuk2me" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:jinhyuk2me@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="copyright">
+                    &copy; 2025 Jinhyuk Jang. Built with <span class="text-cyan">Control & Perception</span>.
+                </p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

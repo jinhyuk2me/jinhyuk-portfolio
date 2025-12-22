@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopee | Project Detail</title>
+    <meta name="description" content="Shopee: Robot Shopping System - Autonomous picking and packing robot">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Specific Detail Page Styles */
+        .project-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(to bottom, rgba(13, 17, 23, 0.9), var(--bg-color)), url('../images/projects/shopee_banner.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .project-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 17, 23, 0.7);
+            z-index: -1;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            font-family: var(--font-code);
+            font-size: 0.9rem;
+        }
+
+        .project-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-section {
+            padding: 4rem 0;
+        }
+
+        .content-block {
+            margin-bottom: 3rem;
+        }
+
+        .content-block h3 {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            margin-bottom: 1.2rem;
+            border-left: 3px solid var(--accent-cyan);
+            padding-left: 1rem;
+        }
+
+        .content-block p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .feature-item h4 {
+            color: var(--accent-cyan);
+            margin-bottom: 0.8rem;
+        }
+
+        .tech-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .challenge-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .challenge-title {
+            color: var(--accent-amber);
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <span class="text-cyan">&lt;</span>Jinhyuk<span class="text-amber">/&gt;</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#experience">Experience</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://github.com/jinhyuk2me/Shopee" target="_blank" class="btn btn-outline">
+                <i class="fab fa-github"></i> View Code
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-meta">
+                    <span class="project-meta-item"><i class="far fa-calendar"></i> 2025.09 - 2025.11</span>
+                    <span class="project-meta-item"><i class="fas fa-users"></i> Team Project</span>
+                    <span class="project-meta-item"><i class="fas fa-code"></i> ROS 2 / Python / C++</span>
+                </div>
+                <h1 class="hero-title">Shopee: Robot Shopping System</h1>
+                <p class="hero-desc">
+                    An autonomous in-store shopping system featuring "Pickee" and "Packee" robots.
+                    Integrates <strong>Nav2</strong>, <strong>MoveIt</strong>, and <strong>LLM-based voice
+                        interactions</strong> for a seamless retail automation experience.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://github.com/jinhyuk2me/Shopee" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Repository
+                    </a>
+                    <a href="../index.html#projects" class="btn btn-outline">Back to Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="detail-section">
+            <div class="container">
+
+                <!-- Overview -->
+                <div class="content-block">
+                    <h3>Project Overview</h3>
+                    <p>
+                        Shopee is an automated robotic shopping system designed to streamline the picking and packing
+                        process in retail environments.
+                        Customers can order items via a mobile app, and the system coordinates two types of robots:
+                    </p>
+                    <ul>
+                        <li><strong>Pickee:</strong> Navigates to shelves, identifies items, and picks them using a
+                            robotic arm.</li>
+                        <li><strong>Packee:</strong> Receives items at a packing station and prepares them for delivery.
+                        </li>
+                    </ul>
+                    <p>
+                        The system also features a "Night/Stocking Mode" where robots can follow staff members and
+                        respond to natural language voice commands to assist with inventory management.
+                    </p>
+                </div>
+
+                <!-- Key Features -->
+                <div class="content-block">
+                    <h3>Key Features</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h4><i class="fas fa-robot"></i> Remote Shopping & Picking</h4>
+                            <p>Autonomous navigation to efficient pick locations. Vision-guided arm control for precise
+                                item grasping.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-box-open"></i> Automated Packing</h4>
+                            <p>Coordinated handover between picking and packing robots using dual-arm manipulation.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-desktop"></i> Admin Monitoring</h4>
+                            <p>Real-time dashboard showing robot status (battery, location), active tasks, and network
+                                diagnostics.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-microphone"></i> LLM Voice Interaction</h4>
+                            <p>Fine-tuned LLM (Qwen) with Whisper STT to interpret vague commands like "Go to the snack
+                                corner".</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Tech -->
+                <div class="content-block">
+                    <h3>Core Technology</h3>
+                    <ul>
+                        <li><strong>Autonomous Driving:</strong> Nav2-based path planning with custom velocity modifiers
+                            for dynamic environments.</li>
+                        <li><strong>Precision Parking:</strong> ArUco marker recognition with specialized preprocessing
+                            (grayscale/binarization) for high-precision alignment.</li>
+                        <li><strong>Arm Control:</strong> Visual servoing using Two-Stream Networks and PD control with
+                            Gaussian velocity profiles to reduce vibration.</li>
+                        <li><strong>Person Tracking:</strong> Custom YOLO models trained on staff uniforms for reliable
+                            "Follow Me" functionality.</li>
+                    </ul>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="content-block">
+                    <h3>Tech Stack</h3>
+                    <div class="tech-grid">
+                        <span class="tech-tag">ROS 2 (Humble)</span>
+                        <span class="tech-tag">Nav2</span>
+                        <span class="tech-tag">MoveIt</span>
+                        <span class="tech-tag">YOLOv11</span>
+                        <span class="tech-tag">PoseCNN</span>
+                        <span class="tech-tag">Whisper STT</span>
+                        <span class="tech-tag">Qwen (LLM)</span>
+                        <span class="tech-tag">Python & C++</span>
+                        <span class="tech-tag">PyQt6</span>
+                        <span class="tech-tag">TCP/IP & UDP</span>
+                    </div>
+                </div>
+
+                <!-- Challenges -->
+                <div class="content-block">
+                    <h3>Technical Challenges & Solutions</h3>
+
+                    <div class="challenge-item">
+                        <div class="challenge-title">Unstable Marker Recognition</div>
+                        <p><strong>Problem:</strong> Standard ArUco detection failed under varying lighting
+                            conditions.<br>
+                            <strong>Solution:</strong> Implemented a preprocessing pipeline with grayscale conversion
+                            and adaptive binarization to maximize marker contrast.
+                        </p>
+                    </div>
+
+                    <div class="challenge-item">
+                        <div class="challenge-title">Picking Misalignment</div>
+                        <p><strong>Problem:</strong> Mobile robot stopping position variance caused arm reach
+                            failures.<br>
+                            <strong>Solution:</strong> Developed a real-time calibration routine that adjusts the arm's
+                            target coordinates based on the actual stopped position relative to the shelf marker.
+                        </p>
+                    </div>
+
+                    <div class="challenge-item">
+                        <div class="challenge-title">LLM Hallucinations</div>
+                        <p><strong>Problem:</strong> General LLMs sometimes generated invalid navigation targets.<br>
+                            <strong>Solution:</strong> Conducted QLoRA SFT (Supervised Fine-Tuning) on a specific
+                            dataset of 500+ location-based queries to ensure the model output strictly adhered to the
+                            facility map.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="social-links">
+                    <a href="https://github.com/jinhyuk2me" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/jinhyuk2me" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:jinhyuk2me@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="copyright">
+                    &copy; 2025 Jinhyuk Jang. Built with <span class="text-cyan">Control & Perception</span>.
+                </p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

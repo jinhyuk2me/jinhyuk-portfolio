@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bikecast | Project Detail</title>
+    <meta name="description" content="Bikecast: Seoul Bike Demand Forecasting & Analytics">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Specific Detail Page Styles */
+        .project-hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(to bottom, rgba(13, 17, 23, 0.9), var(--bg-color)), url('../images/projects/bikecast_banner.png') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .project-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 17, 23, 0.7);
+            z-index: -1;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            font-family: var(--font-code);
+            font-size: 0.9rem;
+        }
+
+        .project-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-section {
+            padding: 4rem 0;
+        }
+
+        .content-block {
+            margin-bottom: 3rem;
+        }
+
+        .content-block h3 {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            margin-bottom: 1.2rem;
+            border-left: 3px solid var(--accent-cyan);
+            padding-left: 1rem;
+        }
+
+        .content-block p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .feature-item h4 {
+            color: var(--accent-cyan);
+            margin-bottom: 0.8rem;
+        }
+
+        .tech-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .challenge-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .challenge-title {
+            color: var(--accent-amber);
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <span class="text-cyan">&lt;</span>Jinhyuk<span class="text-amber">/&gt;</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#experience">Experience</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://github.com/jinhyuk2me/Bikecast" target="_blank" class="btn btn-outline">
+                <i class="fab fa-github"></i> View Code
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-meta">
+                    <span class="project-meta-item"><i class="far fa-calendar"></i> 2025.03</span>
+                    <span class="project-meta-item"><i class="fas fa-users"></i> Team Project</span>
+                    <span class="project-meta-item"><i class="fas fa-chart-bar"></i> Data Analysis / ML</span>
+                </div>
+                <h1 class="hero-title">Bikecast: Demand Forecasting</h1>
+                <p class="hero-desc">
+                    A machine learning-powered service addressing bike shortages in Seoul's "Ddareungi" system.
+                    Uses <strong>XGBoost</strong> to predict demand and recommend new station locations.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://github.com/jinhyuk2me/Bikecast" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i> Repository
+                    </a>
+                    <a href="../index.html#projects" class="btn btn-outline">Back to Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="detail-section">
+            <div class="container">
+
+                <!-- Overview -->
+                <div class="content-block">
+                    <h3>Project Overview</h3>
+                    <p>
+                        Bikecast analyzes over 44 million trip records from Seoul's public bike system to solve
+                        supply/demand imbalances.
+                        By correlating weather, public transit usage, and elevation data, it provides actionable
+                        insights for bike redistribution and station planning.
+                    </p>
+                </div>
+
+                <!-- Key Features -->
+                <div class="content-block">
+                    <h3>Key Services</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h4><i class="fas fa-clock"></i> Demand Prediction (SR_01)</h4>
+                            <p>Predicts hourly rental numbers for specific stations based on time, weather (temp, rain),
+                                and seasonality. achieved R² = 0.835.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-map-pin"></i> Site Recommendation (SR_02)</h4>
+                            <p>Recommends optimal locations for new bike stations by analyzing spatial features like
+                                proximity to parks, subways, and population density.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-database"></i> High-Performance Querying</h4>
+                            <p>Optimized SQL queries on 44M+ records, reducing data retrieval time from hours to seconds
+                                using proper indexing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analysis Findings -->
+                <div class="content-block">
+                    <h3>Key Analysis Findings</h3>
+                    <ul>
+                        <li><strong>Commute Patterns:</strong> Clear demand peaks observed at 7-9 AM and 5-7 PM.</li>
+                        <li><strong>Weather Impact:</strong> Optimal riding temperature identified around 22°C.
+                            Precipitation significantly drops usage.</li>
+                        <li><strong>Location Factors:</strong> Lower elevation and proximity to transit hubs strongly
+                            correlate with higher turnover rates.</li>
+                    </ul>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="content-block">
+                    <h3>Tech Stack</h3>
+                    <div class="tech-grid">
+                        <span class="tech-tag">Python (Pandas, NumPy)</span>
+                        <span class="tech-tag">XGBoost</span>
+                        <span class="tech-tag">Scikit-Learn</span>
+                        <span class="tech-tag">MySQL (AWS RDS)</span>
+                        <span class="tech-tag">Folium</span>
+                        <span class="tech-tag">PyQt5</span>
+                    </div>
+                </div>
+
+                <!-- Challenges -->
+                <div class="content-block">
+                    <h3>Technical Challenges & Evaluation</h3>
+
+                    <div class="challenge-item">
+                        <div class="challenge-title">Big Data Processing</div>
+                        <p><strong>Problem:</strong> Handling 44 million rows locally was inefficient.<br>
+                            <strong>Solution:</strong> Migrated to AWS RDS with optimized indexing strategies to enable
+                            real-time analysis capabilities.
+                        </p>
+                    </div>
+
+                    <div class="challenge-item">
+                        <div class="challenge-title">Model Limitations</div>
+                        <p><strong>Observation:</strong> While effective for general trends, the model struggles with
+                            non-linear spikes in ultra-high demand areas due to external factors not captured in public
+                            data (e.g., local events).</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="social-links">
+                    <a href="https://github.com/jinhyuk2me" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/jinhyuk2me" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:jinhyuk2me@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="copyright">
+                    &copy; 2025 Jinhyuk Jang. Built with <span class="text-cyan">Control & Perception</span>.
+                </p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
