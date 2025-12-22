@@ -3,7 +3,7 @@
         "title": "Shopee: Robot Shopping System",
         "description": "A multi-robot autonomous shopping system where robots navigate shelves, pick items, and deliver them. Features ROS2 architecture, FSM-based coordination, and central server management.",
         "image": "images/projects/shopee_banner.jpg",
-        "github": "https://github.com/jinhyuk2me/Shopee",
+        "github": "projects/shopee/index.html",
         "tags": [
             "ROS 2",
             "Nav2",
@@ -14,7 +14,7 @@
         "title": "Roomie: Hotel Delivery Robot",
         "description": "Autonomous hotel service robot with inter-floor navigation using robot arm for elevator control. Features YOLOv8n vision for obstacle and glass door detection. Achieved 95% button recognition accuracy with YOLO+CNN pipeline.",
         "image": "images/projects/roomie_banner.png",
-        "github": "https://github.com/jinhyuk2me/Roomie",
+        "github": "projects/roomie/index.html",
         "tags": [
             "ROS 2",
             "YOLOv8",
@@ -27,7 +27,7 @@
         "title": "FALCON: Airport Safety AI",
         "description": "Real-time bird strike and FOD detection using Blender/Unity synthetic data. Features collision risk calculation and LLM-based pilot voice Q&A.",
         "image": "images/projects/falcon_banner.png",
-        "github": "https://github.com/jinhyuk2me/FALCON",
+        "github": "projects/falcon/index.html",
         "tags": [
             "AI/CV",
             "Synthetic Data",
@@ -40,7 +40,7 @@
         "title": "Bikecast: Demand Forecasting",
         "description": "Bike-sharing demand forecasting analyzing 44M trip records with XGBoost. Optimized query performance from hours to tens of seconds using indexing.",
         "image": "images/projects/bikecast_banner.png",
-        "github": "https://github.com/jinhyuk2me/Bikecast",
+        "github": "projects/bikecast/index.html",
         "tags": [
             "Data Analysis",
             "XGBoost",
@@ -51,7 +51,7 @@
         "title": "DUST: Smart Logistics Control",
         "description": "RFID-based IoT platform for integrated control of AGVs, conveyors, and gates. Improved response speed 3x using binary protocol.",
         "image": "images/projects/dust_banner.png",
-        "github": "https://github.com/jinhyuk2me/DUST",
+        "github": "projects/dust/index.html",
         "tags": [
             "IoT",
             "FSM",
@@ -62,7 +62,7 @@
         "title": "Minecraft with ROS2 & SLAM",
         "description": "A robotics experiment integrating Minecraft with ROS 2. Controls the game character using a physical joystick via micro-ROS and performs real-time SLAM mapping.",
         "image": "images/projects/minecraft_banner.png",
-        "github": "https://github.com/jinhyuk2me/Minecraft_with_ROS2",
+        "github": "projects/minecraft/index.html",
         "tags": [
             "ROS 2",
             "micro-ROS",

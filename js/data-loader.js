@@ -197,7 +197,7 @@ class PortfolioLoader {
         if (!projectsGrid) return;
 
         projectsGrid.innerHTML = projects.map(project => `
-            <a href="${project.github}" target="_blank" class="project-card-link">
+            <a href="${project.github}" class="project-card-link">
                 <div class="project-card">
                     <img src="${project.image}" alt="${project.title}" class="project-image">
                     <div class="project-content">
